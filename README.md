@@ -27,7 +27,7 @@ O site "NeoGym" foi criado para testar a minha habilidade de API RESTFUL, então
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
 
 ## Outros
-Veja o FrontEnd da versão do cliente desse projeto!
-https://github.com/paulo-henrique-santos/front-end-charada.git
+Veja o FrontEnd da versão do admin desse projeto!
+https://github.com/paulo-henrique-santos/Projeto-Academia-admin-.git
 Veja o BackEnd desse projeto!
 https://github.com/juliano-amaro/NeoGYM_backend.git

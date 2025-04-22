@@ -15,7 +15,7 @@
   </header>
 
   <main class="bg-black flex-col flex-grow flex items-center justify-center text-center a p-6">
-    <div class="teclado bg-neutral-800 shadow-xl shadow-indigo-800/70 flex-col flex-grow flex items-center justify-center p-6 rounded-md w-80">
+    <div class="teclado bg-neutral-800 shadow-xl shadow-indigo-800/70 flex-col flex items-center justify-center p-6 rounded-md w-80">
       <p id="cpf" class="vazio text-2xl rounded-md h-10 w-full max-w-md py-1 px-3 text-center bg-white mb-3" data-placeholder='Insira o seu CPF...'></p>
       <table>
         <tr>
@@ -34,13 +34,11 @@
           <td><button class="botao" onclick="insert('3')">3</button></td>
         </tr>
         <tr>
-          <td colspan="3"><button id="zero" class="botao" onclick="insert('0')">0</button></td>
-          
-        </tr>
-        <tr>
-          <td colspan="2"><button class="botao bg-green-600 hover:bg-green-800" id="entrar" onclick="buscarCpf()">Entrar</button></td>
           <td><button class="botao bg-red-600 hover:bg-red-800"" onclick="back()"><</button></td>
+          <td><button id="zero" class="botao" onclick="insert('0')">0</button></td>
+          <td><button class="botao bg-green-600 hover:bg-green-800" id="entrar" onclick="buscarCpf()">Entrar</button></td>
         </tr>
+      
       </table>
 
     </div>

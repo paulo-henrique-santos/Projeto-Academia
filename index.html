@@ -5,17 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🤖 NeoGym 🏋️‍♂️</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-white h-screen flex flex-col">
 
-  <header class="bg-black text-white p-6 flex items-center">
-    <img src="neogym.png" alt="Logo" style="height: 100%; width: 10%;" class="mr-4">
+  <header class="bg-black w-full text-white p-5 flex items-center text-center justify-center">
+    <img src="neogym.png" alt="Logo" style="height: 100%; width: 10em;" class="mr-4">
     <h1 class="text-2xl font-bold">Bem-Vindo a NeoGym 🏋️‍♂️</h1>
   </header>
 
-  <main class="flex-grow flex items-center justify-center p-6">
-    <input id="cpf" type="text" class="border-2 border-gray-300 rounded-md w-full max-w-md py-2 px-3 text-center" maxlenght="11" placeholder="Insira seu CPF..." maxlength="11">
-    <button type="submit" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 ms-3 rounded" onclick="buscarCpf()">Entrar</button>
+  <main class="bg-black flex-col flex-grow flex items-center justify-center text-center a p-6">
+    <div class="teclado bg-neutral-800 shadow-xl shadow-indigo-800/70 flex-col flex-grow flex items-center justify-center p-6 rounded-md w-80">
+      <p id="cpf" class="vazio text-2xl rounded-md h-10 w-full max-w-md py-1 px-3 text-center bg-white mb-3" data-placeholder='Insira o seu CPF...'></p>
+      <table>
+        <tr>
+          <td><button class="botao" onclick="insert('7')">7</button></td>
+          <td><button class="botao" onclick="insert('8')">8</button></td>
+          <td><button class="botao" onclick="insert('9')">9</button></td>
+        </tr>
+        <tr>
+          <td><button class="botao" onclick="insert('4')">4</button></td>
+          <td><button class="botao" onclick="insert('5')">5</button></td>
+          <td><button class="botao" onclick="insert('6')">6</button></td>
+        </tr>
+        <tr>
+          <td><button class="botao" onclick="insert('1')">1</button></td>
+          <td><button class="botao" onclick="insert('2')">2</button></td>
+          <td><button class="botao" onclick="insert('3')">3</button></td>
+        </tr>
+        <tr>
+          <td colspan="3"><button id="zero" class="botao" onclick="insert('0')">0</button></td>
+          
+        </tr>
+        <tr>
+          <td colspan="2"><button class="botao bg-green-600 hover:bg-green-800" id="entrar" onclick="buscarCpf()">Entrar</button></td>
+          <td><button class="botao bg-red-600 hover:bg-red-800"" onclick="back()"><</button></td>
+        </tr>
+      </table>
+
+    </div>
+    <div id="status" class='w-full h-full'>
+      
+    </div>
   </main>
 
   <footer class="bg-black text-white p-6 text-center">

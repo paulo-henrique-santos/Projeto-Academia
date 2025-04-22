@@ -1,3 +1,38 @@
 footer a {
     text-decoration: none;
 }
+
+.botao {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(237, 237, 237);
+    margin: 3px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.botao:hover {
+    background-color: rgb(175, 175, 175);
+}
+
+#entrar {
+    width: 108px;
+}
+
+#zero {
+    width: 165px;
+}
+
+#cpf.vazio::before {
+    content: attr(data-placeholder);
+    color: #000;
+
+}
+
+#status {
+    top: 0;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

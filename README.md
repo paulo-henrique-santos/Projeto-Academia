@@ -12,6 +12,8 @@ O site "NeoGym" foi criado para testar a minha habilidade de API RESTFUL, então
 * [Outros](#outros)
 ## Funcionalidades
  - Sistema de verificador de cpf
+ - Sistema de bloquear cpf inválido / não pagantes
+ - Sistema de liberar cpf válidos / pagantes
 ## Tecnologias Utilizadas
 - **Linguagem/Frameworks:**
  Liste as principais tecnologias usadas no projeto, como por exemplo:
